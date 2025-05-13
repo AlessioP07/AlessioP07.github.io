@@ -1,0 +1,178 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #00ffe7;
+}
+
+.logo span {
+  color: #ff00d4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ffe7;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url('crypto-bg.jpg') center/cover no-repeat;
+  color: #ffffff;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #00ffe7;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #00bfa6;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.page {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+.page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ffe7;
+}
+
+.page h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #ff00d4;
+}
+
+.page p, .page li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background-color: #ff00d4;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #c600a1;
+}
+
+/* Animazioni */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.6s ease-out;
+}
