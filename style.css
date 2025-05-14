@@ -148,6 +148,22 @@ footer {
   background-color: #c600a1;
 }
 
+/* Sezione con bordi arrotondati: Sfide e opportunità */
+.section-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 0, 212, 0.3);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 231, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 0, 212, 0.4);
+}
+
 /* Animazioni */
 @keyframes fadeIn {
   from {
